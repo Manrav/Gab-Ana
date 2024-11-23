@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&subset=cyrillic&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gab&Ana — магазин стильной одежды для подростков. Уникальный стиль для мальчиков и девочек.">
+    <title>Gab&Ana - Teen Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Gab&Ana">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#categories">Коллекции</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="#categories" class="btn" id="startShoppingBtn">Начать покупки</a>
+    </header>
+
+    <!-- Главный блок -->
+    <section class="hero">
+        <h1>Новая коллекция для смелых и ярких</h1>
+        <p>Выделяйся. Быть уникальным — это твой стиль.</p>
+        <a href="#categories" class="btn">Смотреть коллекцию</a>
+    </section>
+
+    <!-- Каталог -->
+    <section id="categories" class="collection">
+        <h2>Коллекции</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="images/tshirt.jpg" alt="Футболка" class="zoomable" onclick="openGallery(0)">
+                <h3>Футболки</h3>
+            </div>
+            <div class="category">
+                <img src="images/jeans.jpg" alt="Джинсы" class="zoomable" onclick="openGallery(1)">
+                <h3>Джинсы</h3>
+            </div>
+            <div class="category">
+                <img src="images/hoodies.jpg" alt="Толстовка" class="zoomable" onclick="openGallery(2)">
+                <h3>Худи</h3>
+            </div>
+        </div>
+    </section>
+
+<div class="categories">
+    <div class="category">
+        <a href="categories/tshirts/index.html">
+            <img src="images/tshirt.jpg" alt="Футболки">
+            <h3>Футболки</h3>
+        </a>
+    </div>
+    <div class="category">
+        <a href="categories/jeans/index.html">
+            <img src="images/jeans.jpg" alt="Джинсы">
+            <h3>Джинсы</h3>
+        </a>
+    </div>
+    <div class="category">
+        <a href="categories/hoodies/index.html">
+            <img src="images/hoodies.jpg" alt="Худи">
+            <h3>Худи</h3>
+        </a>
+    </div>
+</div>
+
+
+
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <h2>О нас</h2>
+        <p>Gab&Ana — это магазин для тех, кто не боится быть собой. Мы предлагаем одежду, которая подчеркивает индивидуальность каждого подростка.</p>
+    </section>
+
+
+	
+	<!-- Модальное окно галереи -->
+<div id="galleryModal" class="gallery-modal">
+    <div class="gallery-content">
+        <span class="gallery-close" onclick="closeGallery()">&times;</span>
+        <img id="galleryImage" src="" alt="Галерея">
+    </div>
+</div>
+
+	
+
+    <!-- Загрузка товаров из Excel -->
+    <section id="excel-upload">
+        <h2>Загрузить товары из Excel</h2>
+        <input type="file" id="uploadExcel" accept=".xlsx, .xls">
+        <div id="product-list">
+            <!-- Товары из Excel -->
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="reviews">
+        <h2>Отзывы</h2>
+        <div class="review">
+            <p>"Gab&Ana помогли мне найти свой стиль! Одежда невероятно удобная и стильная!" — Анна, 16 лет</p>
+        </div>
+        <div class="review">
+            <p>"Я всегда хотел выделяться, и теперь это стало возможно с вашей одеждой!" — Максим, 17 лет</p>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <h2>Контакты</h2>
+        <p>Email: info@gabana.com</p>
+        <p>Телефон: +7 900 123 45 67</p>
+        <p>Соцсети: Instagram, TikTok, Facebook</p>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© 2024 Gab&Ana. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+
